@@ -1,3 +1,39 @@
-header{
+header {
    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2px solid #999;
+}
+
+/* 
+.searchForm{
+   margin-right: 
+} */
+
+li {
+   list-style: none;
+}
+
+.card-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.card-grid .card {
+   flex: 1 1 200px;
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.postButton {
+   text-decoration: none;
+   color: black;
+}
+
+.homeBack {
+   text-decoration: none;
+   color: black;
 }

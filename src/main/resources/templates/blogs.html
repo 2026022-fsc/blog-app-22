@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/style.css">
    <title>spring</title>
 </head>
+
 <body>
    <header>
-      <h1>spring</h1>
-      <input type="text" placeholder="キーワード検索" name="searchForm">
+      <a href="/blogs" class="homeBack">
+         <h1>spring</h1>
+      </a>
+      <input type="text" placeholder="キーワード検索" name="searchForm" class="searchForm">
+      <a href="/blogs/newPost" class="postButton">投稿</a>
    </header>
-   
-   
+
+   <nav>
+      <ul>
+         <li>ホーム</li>
+         <li>プロフィール</li>
+      </ul>
+   </nav>
+
+   <div class="card-grid">
+      <div class="card">
+         <h3>ブログ1</h3> <!-- DBからタイトルを取得したい -->
+         <p>ブログ本文</p>
+      </div>
+
+      <div class="card">
+         <h3>ブログ2</h3> <!-- DBからタイトルを取得したい -->
+         <p>ブログ本文</p>
+      </div>
+
+      <div class="card">
+         <h3>ブログ3</h3> <!-- DBからタイトルを取得したい -->
+         <p>ブログ本文</p>
+      </div>
+   </div>
 
 </body>
+
 </html>
