@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja" xmlns:th="http://www/thymeleaf.org">
-
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/style.css">
-   <title>新規投稿</title>
+   <title>Document</title>
 </head>
-
 <body>
    <header>
-      <a href="/blogs" class="homeBack"><h1>spring</h1></a>
+      <a href="/blogs" class="homeBack">
+         <h1>spring</h1>
+      </a>
       <input type="text" placeholder="キーワード検索" name="searchForm" class="searchForm">
       <a href="/blogs/newPost" class="postButton">投稿</a>
    </header>
@@ -22,14 +22,7 @@
       </ul>
    </nav>
 
-   <label for="postTitle">タイトル</label><br>
-   <input type="text" name="titleForm"><br>
-
-   <label for="postTexts">本文</label><br>
-   <input type="text" name="textsForm"><br>
-
-   <input type="button" value="保存">
-
+   <h1>投稿完了</h1>
+   <p>「<span th:text="${title}">ブログのタイトル</span>」を投稿しました。</p>
 </body>
-
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www/thymeleaf.org">
 
 <head>
    <meta charset="UTF-8">
@@ -25,19 +25,27 @@
    </nav>
 
    <div class="card-grid">
-      <div class="card">
-         <h3>ブログ1</h3> <!-- DBからタイトルを取得したい -->
-         <p>ブログ本文</p>
+      <!-- <div class="card">
+         <a href="/blogs/detail">
+            <h3>ブログ1</h3> 
+            <p>ブログ本文</p>
+         </a>
+
       </div>
 
       <div class="card">
-         <h3>ブログ2</h3> <!-- DBからタイトルを取得したい -->
-         <p>ブログ本文</p>
-      </div>
+         <a href="/blogs/detail">
+            <h3>ブログ2</h3> 
+            <p>ブログ本文</p>
+         </a>
 
-      <div class="card">
-         <h3>ブログ3</h3> <!-- DBからタイトルを取得したい -->
-         <p>ブログ本文</p>
+      </div> -->
+
+      <div class="card" th:each="blog:${blogs}">
+         <a th:href="@{/blogs/{id}(id=${blog.id})}" class="blogDetail">
+            <h3 th:text="${blog.title}">ブログ</h3> 
+            <p th:text="${blog.texts}">ブログ本文</p>
+         </a>
       </div>
    </div>
 
