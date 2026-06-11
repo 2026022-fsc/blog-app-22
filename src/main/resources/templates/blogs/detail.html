@@ -18,16 +18,22 @@
       <a href="/blogs/newPost" class="postButton">投稿</a>
    </header>
 
-   <nav>
-      <ul>
-         <a href="/blogs" class="navigation"><li>ホーム</li></a>
-         <li>プロフィール</li>
-    
-      </ul>
-   </nav>
+   <div class="yoko">
+      <nav>
+         <ul>
+            <a href="/blogs" class="navigation">
+               <li>ホーム</li>
+            </a>
+            <li>プロフィール</li>
 
-   <h2 th:text="${blogs.title}">ブログのタイトル</h2>
-   <p th:text="${blogs.texts}">本文</p>
+         </ul>
+      </nav>
+
+      <h2 th:text="${blogs.title}">ブログのタイトル</h2>
+      <p th:text="${blogs.texts}">本文</p>
+
+   </div>
+
 
 </body>
 

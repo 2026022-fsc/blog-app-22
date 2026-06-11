@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/style.css">
    <title>ブログ投稿完了</title>
 </head>
+
 <body>
    <header>
       <a href="/blogs" class="homeBack">
@@ -15,16 +17,22 @@
       <a href="/blogs/newPost" class="postButton">投稿</a>
    </header>
 
-   <nav>
-      <ul>
-         <a href="/blogs" class="navigation"><li>ホーム</li></a>
-         <li>プロフィール</li>
-      </ul>
-   </nav>
+   <div class="yoko">
+      <nav>
+         <ul>
+            <a href="/blogs" class="navigation">
+               <li>ホーム</li>
+            </a>
+            <li>プロフィール</li>
+         </ul>
+      </nav>
 
-   <h1>投稿完了</h1>
-   <p>投稿が完了しました。</p>
+      <h1>投稿完了</h1>
+      <p>投稿が完了しました。</p>
+   </div>
+
    <!-- <a href="blogs">ホームへ戻る</a> -->
    <!-- <p th:each="blogs:${blogs}">「<span th:text="${blogs.title}">ブログのタイトル</span>」を投稿しました。</p> -->
 </body>
+
 </html>

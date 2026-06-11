@@ -5,7 +5,7 @@ header {
    border-bottom: 2px solid #999;
    position: sticky;
    top: 0;
-   
+
 }
 
 
@@ -47,6 +47,7 @@ li {
 .navigation {
    text-decoration: none;
    color: black;
+   width: 50%;
 }
 
 a {
@@ -54,7 +55,7 @@ a {
    color: black;
 }
 
-.yoko{
+.yoko {
    display: flex;
    gap: 5%;
 }
