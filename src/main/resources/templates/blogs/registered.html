@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/style.css">
-   <title>Document</title>
+   <title>ブログ投稿完了</title>
 </head>
 <body>
    <header>
@@ -17,12 +17,14 @@
 
    <nav>
       <ul>
-         <li>ホーム</li>
+         <a href="/blogs" class="navigation"><li>ホーム</li></a>
          <li>プロフィール</li>
       </ul>
    </nav>
 
    <h1>投稿完了</h1>
-   <p>「<span th:text="${title}">ブログのタイトル</span>」を投稿しました。</p>
+   <p>投稿が完了しました。</p>
+   <!-- <a href="blogs">ホームへ戻る</a> -->
+   <!-- <p th:each="blogs:${blogs}">「<span th:text="${blogs.title}">ブログのタイトル</span>」を投稿しました。</p> -->
 </body>
 </html>

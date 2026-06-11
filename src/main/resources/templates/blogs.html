@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
    <header>
       <a href="/blogs" class="homeBack">
          <h1>spring</h1>
@@ -17,38 +18,29 @@
       <a href="/blogs/newPost" class="postButton">投稿</a>
    </header>
 
-   <nav>
-      <ul>
-         <li>ホーム</li>
-         <li>プロフィール</li>
-      </ul>
-   </nav>
+   <div class="yoko">
+      <nav>
+         <ul>
+            <a href="/blogs" class="navigation">
+               <li>ホーム</li>
+            </a>
+            <li>プロフィール</li>
+         </ul>
+      </nav>
 
-   <div class="card-grid">
-      <!-- <div class="card">
-         <a href="/blogs/detail">
-            <h3>ブログ1</h3> 
-            <p>ブログ本文</p>
-         </a>
 
-      </div>
+      <div class="card-grid">
 
-      <div class="card">
-         <a href="/blogs/detail">
-            <h3>ブログ2</h3> 
-            <p>ブログ本文</p>
-         </a>
+         <div class="card" th:each="blog:${blogs}">
+            <a th:href="@{/blogs/{id}(id=${blog.id})}" class="blogDetail">
+               <h3 th:text="${blog.title}">ブログ</h3>
+               <p th:text="${blog.texts}">ブログ本文</p>
+            </a>
+            <br>
+         </div>
 
-      </div> -->
-
-      <div class="card" th:each="blog:${blogs}">
-         <a th:href="@{/blogs/{id}(id=${blog.id})}" class="blogDetail">
-            <h3 th:text="${blog.title}">ブログ</h3> 
-            <p th:text="${blog.texts}">ブログ本文</p>
-         </a>
       </div>
    </div>
-
 </body>
 
 </html>

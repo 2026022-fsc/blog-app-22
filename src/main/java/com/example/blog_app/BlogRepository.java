@@ -27,4 +27,11 @@ public class BlogRepository {
             .query(Blog.class)
             .optional();
    }
+
+   public void save(Blog blog){
+      jdbcClient.sql("INSERT INTO blogs (title, texts) VALUES (:title,:texts)")
+            .param("title", blog.getTitle())
+            .param("texts",blog.getTexts())
+            .update();
+   }
 }

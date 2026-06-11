@@ -3,12 +3,12 @@ header {
    align-items: center;
    justify-content: space-between;
    border-bottom: 2px solid #999;
+   position: sticky;
+   top: 0;
+   
 }
 
-/* 
-.searchForm{
-   margin-right: 
-} */
+
 
 li {
    list-style: none;
@@ -39,7 +39,22 @@ li {
    color: black;
 }
 
-.blogDetail{
+.blogDetail {
    text-decoration: none;
    color: black;
+}
+
+.navigation {
+   text-decoration: none;
+   color: black;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+.yoko{
+   display: flex;
+   gap: 5%;
 }
